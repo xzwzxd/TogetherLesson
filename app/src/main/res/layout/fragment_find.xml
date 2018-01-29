@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_base" />
+
+
+    <LinearLayout
+        android:id="@+id/ly_help_student"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp67"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:src="@mipmap/img_report" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="话题"
+            android:textColor="#666"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@mipmap/img_you" />
+    </LinearLayout>
+</LinearLayout>

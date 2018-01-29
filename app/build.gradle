@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.qianchang.togetherlesson"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 16
+        versionName "1.16"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    /*****
+     *   android 6.0(api 23) SDK，不再提供org.apache.http.*(只保留几个类) 解决 import org.apache.http.header; 找不到问题
+     */
+    useLibrary 'org.apache.http.legacy'
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'cn.carbs.android:MDDialog:1.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.orhanobut:logger:1.15'
+    //    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.orhanobut:logger:1.3'
+    compile 'com.alibaba:fastjson:1.1.55.android'
+    compile 'com.yanzhenjie:permission:1.0.5'
+    compile 'me.gujun.android.taggroup:library:1.4@aar'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.bm.photoview:library:1.4.1'
+    //https://github.com/bm-x/PhotoView
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+    compile project(':PhotoPicker')
+    compile project(':adlibrary')
+    compile 'cn.carbs.android:MDDialog:1.0.0'
+    compile 'com.malinskiy:superrecyclerview:1.1.4'
+    compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+    implementation project(':brvah')
+    compile 'cn.hugeterry.coordinatortablayout:coordinatortablayout:1.2.0'
+    //tab
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile project(':brvah')
+    compile project(':xframe')
+}

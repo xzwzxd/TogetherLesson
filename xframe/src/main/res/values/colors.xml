@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="XFrame_darker_gray">#aaaaaa</color>
+    <color name="XFrame_white">#ffffff</color>
+    <color name="XFrame_text_gray">#8a8a8a</color>
+
+    <color name="XFrame_loading_dialog_message">#595959</color>
+
+    <color name="dialog_tips_bg">#eeeeee</color>
+    <color name="dialog_tips_btn">#d6d6d6</color>
+    <color name="dialog_tips_line">#c6c6c6</color>
+    <color name="dialog_tips_title_txt">#434343</color>
+    <color name="dialog_tips_content_txt">#898989</color>
+    <color name="dialog_tips_negative_btn_txt">#6699cc</color>
+    <color name="dialog_tips_positive_btn_txt">#c34949</color>
+    <color name="expand_list_view_detail_bg">#f2f2f2</color>
+    <color name="background">#f1f1f1</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red_pres">#ffd1564f</color>
+    <color name="divider_color">#e6e6e6</color>
+    <color name="black">#000000</color>
+
+</resources>

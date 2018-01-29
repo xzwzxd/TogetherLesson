@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="@dimen/dp28"
+    android:background="@mipmap/my_compose"
+    android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_weight="0">
+
+    <TextView
+        android:id="@+id/mTvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginLeft="@dimen/dp20"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="100"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/dp8"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="元"/>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/mTvClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp25"
+            android:text="222"/>
+        <TextView
+            android:id="@+id/mTvCompose"
+            android:layout_below="@+id/mTvClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="222"/>
+        <TextView
+            android:id="@+id/mTvTime"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp25"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="222"/>
+    </RelativeLayout>
+</LinearLayout>
+

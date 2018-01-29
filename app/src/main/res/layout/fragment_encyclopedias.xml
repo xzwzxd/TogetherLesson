@@ -1,0 +1,41 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="15px"
+        android:src="@mipmap/img_set"/>
+
+    <ImageView
+        android:layout_width="161px"
+        android:layout_height="161px"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/img_set"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:textColor="@android:color/white"
+        android:text="大嘴鳄鱼"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25px"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="57px"
+        android:text="巨额可群号"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatortablayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pic_school_detial"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="15dp"
+                  />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:textColor="#111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@mipmap/home_strat" />
+
+                        <TextView
+                            android:id="@+id/tv_collect_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="111"
+                            android:textColor="#898989"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@mipmap/home_strat" />
+
+                        <TextView
+                            android:id="@+id/tv_adddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="111"
+                            android:textColor="#898989"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e6e6e6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#f4f4f4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e6e6e6" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabIndicatorHeight="3dp"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabTextColor="#111" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <include layout="@layout/bottom_school_detial" />
+</android.support.design.widget.CoordinatorLayout>

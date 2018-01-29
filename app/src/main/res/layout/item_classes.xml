@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="TEST"
+        android:textColor="#121212" />
+
+    <com.qianchang.togetherlesson.utils.MyGridView
+        android:id="@+id/item_gridview_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/dp8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="#d5d5d5"/>
+</LinearLayout>

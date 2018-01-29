@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="127dp"
+        android:layout_height="83dp"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/picurl"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/home_play_boder"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tv_applynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <com.qianchang.togetherlesson.utils.MyGridView
+            android:id="@+id/grid_flag"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:layout_marginTop="10dp"
+            android:textColor="#898989"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_coat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="111"
+            android:textColor="#e53712"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

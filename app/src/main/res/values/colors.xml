@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b88d3</color>
+    <color name="colorPrimaryDark">#10a88c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorfefefe">#fefefe</color>
+
+    <color name="black">#000000</color>
+    <color name="background">#f1f1f1</color>
+    <color name="tab_title_focus">#3b88d3</color>
+    <color name="tab_title">#383838</color>
+    <color name="transparent">#00000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="commen_blue">#39b2e2</color>
+    <color name="black1">#565555</color>
+    <color name="colorWindowBg">#FFFEFEFE</color>
+    <color name="head_bg">#3989d5</color>
+    <color name="item_noplayvideo_button_bg">#B3B3B3</color>
+    <color name="noselect_bottom">#cccccc</color>
+    <color name="refreshBgBlack">#404040</color>
+    <color name="alpha10">#00000000</color>
+    <color name="color_232323">#232323</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+
+    <color name="teal">#00796B</color>
+    <color name="brown">#8D6E63</color>
+    <color name="blue">#2196F3</color>
+    <color name="grey">#607D8B</color>
+    <color name="orange">#F57C00</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="theme_color_primary">#d20000</color>
+    <color name="text_color">#FF000000</color>
+
+    <color name="pop_select">#f59e0e</color>
+    <color name="pop_nomal">#111</color>
+    <color name="pop_item_select">#f8f8f8</color>
+    <color name="title_red">#a3da13</color>
+    <color name="white">#ffffff</color>
+
+    <color name="left_title">#f1f4f6</color>
+    <color name="background_divider_gray">#efefef</color>
+    <color name="TextColor3">#969696</color>
+
+    <color name="text_hsitory_select">#f39700</color>
+    <color name="text_hsitory">#767676</color>
+
+
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="basic_color_primary">#373b3e</color>
+    <color name="color_8290AF">#8290AF</color>
+    <color name="line_color">#EDEDED</color>
+    <color name="main_text_color">#878787</color>
+    <color name="author_bg">#09000000</color>
+
+</resources>

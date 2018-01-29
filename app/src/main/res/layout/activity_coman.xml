@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/biankuang_pop">
+
+        <EditText
+            android:id="@+id/ed_coman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:background="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="124px"
+        android:layout_marginRight="124px"
+        android:layout_marginTop="55px"
+        android:background="@drawable/fragment_mine_login"
+        android:text="确认"
+        android:textColor="#fff"
+        android:textSize="31px" />
+</LinearLayout>

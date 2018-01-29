@@ -1,0 +1,58 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:id="@+id/img_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/title_back" />
+
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/shoucang"
+            android:layout_toLeftOf="@id/tv_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shoucang_nomal"
+            android:visibility="gone"
+
+            />
+        <!-- 消息-->
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+
+
+

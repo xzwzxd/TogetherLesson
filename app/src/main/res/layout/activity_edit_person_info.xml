@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_user_icon"
+        android:layout_width="170px "
+        android:layout_height="170px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="35px"
+        android:layout_marginTop="110px"
+        android:src="@mipmap/user_icon_defalt" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="460px"
+        android:layout_height="90px"
+        android:background="@drawable/person_info_border"
+        android:gravity="center"
+        android:text="昵称"
+        android:textColor="#333"
+        android:textSize="30px" />
+
+    <RelativeLayout
+        android:id="@+id/user_school"
+        android:layout_width="460px"
+        android:layout_height="90px"
+        android:layout_marginBottom="25px"
+
+        android:layout_marginTop="25px"
+        android:background="@drawable/person_info_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择所在学校"
+            android:textColor="#333"
+            android:textSize="30px"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="16px"
+            android:layout_height="26px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:src="@mipmap/persson_info_you"
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_age"
+        android:visibility="gone"
+        android:layout_width="460px"
+        android:layout_height="90px"
+        android:layout_marginBottom="25px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/person_info_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择所在年纪"
+            android:textColor="#333"
+            android:textSize="30px" />
+
+        <ImageView
+
+            android:layout_width="16px"
+            android:layout_height="26px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:src="@mipmap/persson_info_you" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/user_mam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/man_select_one"
+            android:gravity="center"
+            android:text="男同学"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/user_women"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100px"
+            android:button="@null"
+            android:drawableTop="@drawable/woman_select_two"
+            android:gravity="center"
+            android:text="女同学"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="125px"
+        android:layout_marginRight="125px"
+        android:layout_marginTop="50px"
+        android:background="@mipmap/login_tel_btn"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="35px" />
+</LinearLayout>

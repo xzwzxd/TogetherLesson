@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mlinerAll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mAllCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="课程"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ddd" />
+
+        <TextView
+            android:id="@+id/mAllSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="学校"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+
+    <LinearLayout
+        android:id="@+id/ly_all_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f8f8f8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ly_class"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f8f8f8"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ly_left_classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_left_classes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="综合排序"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/img_left_classes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/point_bottom_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ddd" />
+
+                <LinearLayout
+                    android:id="@+id/ly_middle_classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_middle_classes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="筛选"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/img_middle_classes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/point_bottom_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ddd" />
+
+                <LinearLayout
+                    android:id="@+id/ly_right_classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_right_classes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="筛选"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/img_right_classes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/point_bottom_gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="#ddd" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp2"
+            android:background="#ddd" />
+
+        <com.qianchang.togetherlesson.widget.XListView
+            android:id="@+id/pullLoadMoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly_all_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.qianchang.togetherlesson.widget.XListView
+            android:id="@+id/xlist_all_school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

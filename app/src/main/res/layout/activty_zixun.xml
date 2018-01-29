@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_softP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/activity_advice_feedback_border">
+
+        <EditText
+            android:id="@+id/ed_consultant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="填写你要咨询的问题"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="提示:我们将以电话的形式 尽快回复您的问题"
+        android:textColor="#efd3a9" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp63"
+        android:layout_marginRight="@dimen/dp63"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/register_press"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="34px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@mipmap/img_counsel">
+
+        <TextView
+            android:id="@+id/tv_titke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="常见咨询"
+            android:textColor="#fff" />
+
+        <com.qianchang.togetherlesson.utils.MyListView
+            android:id="@+id/lv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_titke"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+</LinearLayout>

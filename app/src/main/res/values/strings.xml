@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">聚课</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing emailcompletions."
+    </string>
+
+    <string name="net_not_good">网络异常</string>
+    <string name="tab_2">精选课堂</string>
+    <string name="tab_1">推荐</string>
+
+
+    <string name="sdcard_no_exist">SD卡不存在</string>
+    <string name="camera_not_prepared">摄像头尚未准备好</string>
+    <string name="cancel_value">摄像头尚未准备好</string>
+    <string name="permission_request_error">"申请权限失败"</string>
+    <string name="permission_storage">登录需要读写内存权限，被您拒绝或者系统发生错误申请失败，请您到权限设置页面手动授权，否则功能无法正常使用！</string>
+    <string name="permission_avatar">修改头像时，我们需要拍照和读写内存权限的被您拒绝或者系统发生错误申请失败，请您到权限设置页面手动授权，否则功能无法正常使用！</string>
+
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+
+
+    <string name="pull_to_refresh_header_hint_normal">下拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">正在加载中</string>
+    <string name="pull_to_refresh_header_last_time">刷新时间:</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label">最后更新时间 :</string>
+    <string name="pull_to_refresh_no_more_data">已经加载全部</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+    <string name="pushmsg_center_no_more_msg">已经加载全部</string>
+
+
+
+
+</resources>

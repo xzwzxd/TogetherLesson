@@ -1,0 +1,92 @@
+<resources>
+
+
+    <style name="AppDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.Design.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <!--<item name="actionBarSize">100dip</item>-->
+
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/transparent</item>
+    </style>
+
+    <style name="maintabt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:tag">50</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#111111</item>
+    </style>
+
+    <style name="hui16">
+        <item name="android:textColor">@color/TextColor3</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="progress_loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/selector_dialog_bg</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="view_line">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="main_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/main_text_color</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="fz_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/transparent</item>
+    </style>
+</resources>

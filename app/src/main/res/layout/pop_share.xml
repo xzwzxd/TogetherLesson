@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#88dcdcdc"
+    android:id="@+id/can_be_covered_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/wechat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:padding="10dp"
+                    android:src="@mipmap/wechat_friend"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="微信好友"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/circle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:padding="10dp"
+                    android:src="@mipmap/wechat_circle"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="朋友圈"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/to_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:padding="10dp"
+                    android:src="@mipmap/img_report"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="朋友圈"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="取消"
+            android:paddingBottom="15dp"
+            style="@style/hui16"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

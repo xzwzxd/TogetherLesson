@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp210"
+        android:layout_margin="@dimen/dp25"
+        android:background="@drawable/activity_advice_feedback_border">
+
+        <EditText
+            android:id="@+id/ed_consultant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="30px"
+            android:background="@null"
+            android:hint="感谢您对聚客的反馈，我们会做的更好-" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp63"
+        android:layout_marginRight="@dimen/dp63"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/register_press"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="34px" />
+
+</LinearLayout>

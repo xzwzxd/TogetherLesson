@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingLeft="125px"
+    android:paddingRight="125px"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90px"
+    android:gravity="center_vertical"
+    android:layout_marginTop="132px"
+    android:orientation="horizontal">
+<TextView
+    android:text="手机        :"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/forget_user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#fff"
+        android:hint="输入手机号"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="24px"
+        android:textColor="#111111"
+        android:textColorHint="#777777"
+        android:textSize="30px" />
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#dedede" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <TextView
+            android:text="验证码    :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/forget_yanzheng_pass"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="输入验证码"
+            android:inputType="textPassword"
+            android:paddingLeft="24px"
+            android:maxLength="6"
+            android:textColor="#111111"
+            android:textColorHint="#777777"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/get_register_btn"
+            android:layout_width="140px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25px"
+            android:background="@mipmap/register_sms"
+            android:text="获取验证码"
+            android:textColor="#acacac"
+            android:textSize="22px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#dedede" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90px"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="设置密码:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/forget_user_pass"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#fff"
+        android:hint="设置密码(6-12位)"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="24px"
+        android:textColor="#111111"
+        android:textColorHint="#777777"
+        android:textSize="30px" />
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#dedede" />
+
+
+    <Button
+        android:id="@+id/register_user_btn"
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70px"
+        android:background="@drawable/register_unpress"
+        android:text="完成"
+        android:textColor="#fff"
+        android:textSize="30px" />
+
+
+</LinearLayout>

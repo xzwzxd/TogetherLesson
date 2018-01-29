@@ -1,0 +1,65 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:id="@+id/er_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="哈尔滨"
+            />
+
+        <LinearLayout
+            android:id="@+id/ly_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/img_news"
+            android:layout_toRightOf="@+id/er_code"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/activity_advice_feedback_border"
+            android:gravity="center">
+
+            <!-- 搜索-->
+            <ImageView
+                android:id="@+id/img_seach"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@mipmap/actionbar_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程、学校"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <!-- 消息-->
+        <ImageView
+            android:id="@+id/img_news"
+            android:visibility="gone"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/img_news" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+
+
+
